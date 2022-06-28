@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Database\Seeders\DefaultCategorySeeder;
+use Database\Seeders\DefaultProductSeeder;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,6 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             RegisterDefaultUserSeeder::class,
             DefaultCategorySeeder::class,
+            DefaultProductSeeder::class
         ]);
     }
 }
